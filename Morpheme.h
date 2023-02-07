@@ -1,5 +1,5 @@
 #pragma once
-#include "includes.h"
+#include "includes.h" //Include your stuff here
 
 static class Morpheme
 {
@@ -687,15 +687,11 @@ public:
 
 	static void loadControlParameters();
 
-    static int LoadTracks_Alt(sEventTrackData* track_base, MorphemeEventTrackList* track_list);
-
-	//static int LoadTracks(ImU64 track_base, MorphemeEventTrackList* track_list);
+    static int LoadEventTracks(sEventTrackData* track_base, MorphemeEventTrackList* track_list);
 
 	static void ClearTrackList(MorphemeEventTrackList* track_list);
 
-	//static void Save(MorphemeEventTrackList* track_list);
-
-    static void Save_Alt(MorphemeEventTrackList* track_list);
+    static void SaveEventTracks(MorphemeEventTrackList* track_list);
 
 	static void disableMorphemeUpdates(bool state);
 
