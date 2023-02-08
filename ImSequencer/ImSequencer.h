@@ -25,6 +25,8 @@
 //
 #pragma once
 
+//#include "../Math.h"
+#include <math.h>
 #include <cstddef>
 
 struct ImDrawList;
