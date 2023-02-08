@@ -1,11 +1,13 @@
 #pragma once
-#include "imgui.h"
-#include "imgui_internal.h"
-#include "ImSequencer.h"
-#include "ImCurveEdit.h"
+#include "imgui/imgui.h"
+#include "imgui/imgui_internal.h"
+#include "imsequencer/ImSequencer.h"
+#include "imsequencer/ImCurveEdit.h"
+#include "Math.h"
 #include <math.h>
 #include <vector>
 #include <algorithm>
+
 #define TRACK_MAX 50
 
 struct MorphemeEventTrack

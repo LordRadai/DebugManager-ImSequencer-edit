@@ -1,5 +1,7 @@
 #pragma once
-#include "includes.h" //Include your stuff here
+//#include "includes.h" //Include your stuff here
+#include "Timeline.h"
+#include <windows.h>
 
 static class Morpheme
 {
@@ -713,7 +715,7 @@ public:
 
 	static void printBoneList(uint64_t character_ctrl);
 
-	static void loadBoneData(uint64_t character_ctrl, sBoneData buffer[]);
+	//static void loadBoneData(uint64_t character_ctrl, sBoneData buffer[]);
 
 	static void getCategoryInfo(int category_id, char buffer[]);
 

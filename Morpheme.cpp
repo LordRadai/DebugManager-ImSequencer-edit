@@ -1,4 +1,5 @@
 #include "Morpheme.h"
+#include "common.h"
 
 void Morpheme::loadControlParameters()
 {
@@ -435,6 +436,7 @@ void Morpheme::getNetworkAllNames(uint64_t character_ctrl)
 	getNetworkAllEventTracksName(character_ctrl);
 }
 
+/*
 void Morpheme::printBoneList(uint64_t character_ctrl)
 {
 	if (character_ctrl == 0)
@@ -545,7 +547,7 @@ void Morpheme::getValueInfo(int category, int value, char buffer[])
 	strcpy(buffer, name.c_str());
 
 	return;
-}
+}*/
 
 Morpheme::Network* Morpheme::getNetwork(uint64_t character_ctrl)
 {
@@ -588,7 +590,7 @@ std::vector<Morpheme::NodeDef*> Morpheme::getNetworkAllNodesType(uint64_t charac
 
 	for (size_t i = 0; i < network->m_networkDef->m_numNodes; i++)
 	{
-		if (node_type == NodeType::NodeAnimSyncEvents && DebugMenu.filter_no_tracks_anims)
+		if (node_type == NodeType::NodeAnimSyncEvents && network_inspector.filter_events)
 		{
 			if (network->m_networkDef->m_nodes[i]->m_nodeTypeID == node_type)
 			{

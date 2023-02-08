@@ -1,7 +1,6 @@
-#include "includes.h"
 #include "Timeline.h"
 
-const char* trackNames[50]; //prob unnecessary
+const char* trackNames[50];
 
 void EventTrackEditor::AddMorphemeEventTrack(int id, MorphemeEventTrack event_track, float multiplier)
 { 
